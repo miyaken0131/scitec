@@ -1,0 +1,132 @@
+/* ーー 959px以下（タブレットサイズ）ーー*/
+
+/* ----- 共通 ----- */
+@media screen and (max-width: 960px) {
+  .inner {
+    width: 100%;
+  }
+  header {
+    height: auto;
+    overflow: hidden;
+  }
+  header h1 {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header nav {
+    position: static;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  header nav li:last-child {
+    margin-right: 0;
+  }
+  main {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  aside {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+/* ーー 639px以下（スマホサイズ）ーー*/
+
+/* ----- 共通 ----- */
+@media screen and (max-width: 639px) {
+  main img {
+    width: 100%;
+  }
+  header h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+  header nav {
+    display: none;
+  }
+  main {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  article h3 {
+    text-align: center;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  /* ハンバーガーメニュー */
+  .hamburger-button {
+    display: flex;
+    background-color: #0182be;
+    border-radius: 5px;
+    top: 0;
+    right: 10px;
+  }
+  .hamburger-button path {
+    fill: #fff;
+  }
+  .hamburger-nav {
+    background-color: #b2eaff;
+    border-bottom: 10px solid #0182be;
+  }
+  .hamburger-nav li {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    border-bottom: 1px solid #0182be;
+  }
+  .hamburger-nav a {
+    display: block;
+    color: #0182be;
+    height: auto;
+    line-height: 30px;
+    padding-top: 0;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .hamburger-nav a:hover {
+    color: #fff;
+    background-color: #0182be;
+  }
+
+  /* ----- 学科紹介 ----- */
+  .gakka main .gakka_box figure {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+    width: auto;
+  }
+  .gakka main .gakka_box img {
+    width: auto;
+  }
+  .gakka main .gakka_box .gakka_txt {
+    float: none;
+    width: auto;
+  }
+
+  /* ----- アクセス ----- */
+  .access main .acc_box figure {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .access main .acc_box img {
+    width: auto;
+  }
+  .access main .acc_box .acc_txt {
+    float: none;
+    width: auto;
+  }
+}

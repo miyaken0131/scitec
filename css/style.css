@@ -1,0 +1,272 @@
+/* ーーーーーーーーーー　共通　ーーーーーーーーーー */
+body {
+  font-family: 'メイリオ', Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  background-color: #fff;
+}
+a:link {
+  color: #ffcc00;
+}
+.inner {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+header {
+  background-color: #b2eaff;
+  height: 150px;
+  margin-bottom: 20px;
+  border-top: 10px solid #0182be;
+  border-radius: 0 0 5px 5px;
+}
+header h1 {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+header nav {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+header nav ul {
+  overflow: hidden;
+}
+header nav li {
+  float: left;
+  margin-right: 20px;
+  width: 140px;
+}
+header nav li a {
+  display: block;
+  height: 0;
+  padding-top: 80px;
+  overflow: hidden;
+}
+header nav .nav_home a {
+  background-image: url(../images/nav_home.png);
+}
+header nav .nav_gakka a {
+  background-image: url(../images/nav_gakka.png);
+}
+header nav .nav_nyuga a {
+  background-image: url(../images/nav_nyuga.png);
+}
+header nav .nav_access a {
+  background-image: url(../images/nav_access.png);
+}
+.home .nav_home a,
+.gakka .nav_gakka a,
+.nyuga .nav_nyuga a,
+.access .nav_access a,
+header nav li a:hover {
+  background-position: 0 -80px;
+}
+.contents {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+main {
+  width: 640px;
+  float: left;
+}
+article h2 {
+  color: #fff;
+  background-color: #0182be;
+  font-size: 20px;
+  height: 50px;
+  font-weight: normal;
+  border-radius: 5px;
+  padding-left: 20px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+article h3 {
+  color: #0182be;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+aside figure {
+  margin-bottom: 20px;
+}
+aside .info {
+  border: 5px solid #0182be;
+  border-radius: 5px;
+}
+aside .info h2 {
+  color: #fff;
+  background-color: #0182be;
+  font-size: 20px;
+  font-weight: normal;
+  height: 45px;
+  padding-left: 15px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+aside .info dl {
+  margin: 0 15px 15px 15px;
+}
+aside .info dd {
+  margin-bottom: 20px;
+}
+aside .info dd:last-child {
+  margin-bottom: 0;
+}
+footer {
+  background-color: #b2eaff;
+  height: 110px;
+  border-bottom: 10px solid #0182be;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  overflow: hidden;
+}
+footer address {
+  font-style: normal;
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+
+/* スライドショー */
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto;
+ }
+
+ /* スムーズスクロール */
+ .back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+ }
+ .back-top a {
+   display: block;
+   font-size: 30px;
+   width: 60px;
+   background-color: #0182be;
+   border-radius: 100%;
+   line-height: 60px;
+   text-align: center;
+   color: #fff;
+   text-decoration: none;
+   opacity: 0.8;
+ }
+ .back-top a:hover {
+   opacity: 1;
+ }
+
+ /* ハンバーガーメニュー */
+.hamburger-button {
+  display: none;
+}
+
+
+/* ーーーーーーーーーー　トップページ　ーーーーーーーーーー */
+.home main .bx-wrapper {
+  margin-bottom: 20px;
+}
+.home main h2 {
+  color: #0182be;
+  font-size: 20px;
+  margin: 0 20px 20px 20px;
+}
+.home main p {
+  margin: 0 20px 20px 20px;
+}
+
+
+/* ーーーーーーーーーー　学科紹介　ーーーーーーーーーー */
+.gakka main .gakka_box {
+  overflow: hidden;
+  margin: 0 20px 40px 20px;
+}
+.gakka main .gakka_box:last-child {
+  margin-bottom: 20px;
+}
+.gakka main .para {
+  opacity: 0;
+  position: relative;
+  left: -1000px;
+}
+.gakka main .para.on {
+  opacity: 1;
+  position: relative;
+  left: 0;
+}
+.gakka main figure {
+  float: left;
+}
+.gakka main .gakka_txt {
+  width: 380px;
+  float: right;
+}
+
+
+/* ーーーーーーーーーー　入学案内　ーーーーーーーーーー */
+.nyuga main p {
+  margin-bottom: 30px;
+}
+.nyuga main input {
+  width: 300px;
+}
+.nyuga main textarea {
+  width: 100%;
+  height: 200px;
+}
+.nyuga main button {
+  width: 100px;
+  padding: 5px;
+}
+
+
+/* ーーーーーーーーーー　アクセス　ーーーーーーーーーー */
+.access main .acc_box {
+  overflow: hidden;
+  margin: 0 20px 20px 20px;
+}
+.access main .acc_box figure {
+  float: left;
+  margin: 0;
+}
+.access main .acc_box .acc_txt {
+  width: 380px;
+  float: right;
+}
+.access main .acc_box h3 {
+  text-align: left;
+}
+.access main .acc_box .acc_txt p {
+  margin: 0;
+  text-align: justify;
+}
+.access main h3 {
+  text-align: center;
+}
+.access main p {
+  margin: 0 20px 20px 20px;
+}
+.access main p:last-child {
+  text-align: center;
+}
+.access main figure {
+  margin: 0 20px 20px 20px;
+}
+.access main h1 {
+  text-align: center;
+  font-weight: normal;
+}
+.access main address {
+  text-align: center;
+  font-style: normal;
+}
